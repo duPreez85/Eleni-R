@@ -1,0 +1,75 @@
+lavaan 0.6-9 ended normally after 82 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        30
+  Number of equality constraints                     4
+                                                      
+                                                  Used       Total
+  Number of observations                           300        1092
+                                                                  
+Model Test User Model:
+                                                      
+  Test statistic                                14.278
+  Degrees of freedom                                 4
+  P-value (Chi-square)                           0.006
+
+Parameter Estimates:
+
+  Standard errors                            Bootstrap
+  Number of requested bootstrap draws             1000
+  Number of successful bootstrap draws             627
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(>|z|)
+  t4search ~                                          
+    t2nantic   (c)    0.026    0.029    0.909    0.363
+    t4prvjb_dm       -0.074    0.196   -0.377    0.706
+    t4couns_dm        0.456    0.235    1.939    0.053
+    gender_dm1       -0.353    0.188   -1.878    0.060
+    gender_dm2        0.306    0.190    1.610    0.107
+  t4netw ~                                            
+    t2nantic   (c)    0.026    0.029    0.909    0.363
+    t4prvjb_dm        0.054    0.099    0.544    0.586
+    t4couns_dm        0.069    0.137    0.501    0.617
+    gender_dm1       -0.311    0.101   -3.079    0.002
+    gender_dm2        0.337    0.093    3.629    0.000
+  t4infsk ~                                           
+    t2nantic   (c)    0.026    0.029    0.909    0.363
+    t4prvjb_dm       -0.198    0.123   -1.605    0.108
+    t4couns_dm        0.303    0.170    1.775    0.076
+    gender_dm1       -0.273    0.135   -2.028    0.043
+    gender_dm2        0.273    0.128    2.123    0.034
+  t3cplan ~                                           
+    t2nantic   (a)   -0.080    0.035   -2.265    0.024
+    t4prvjb_dm        0.349    0.087    3.999    0.000
+    t4couns_dm        0.212    0.116    1.836    0.066
+    gender_dm1        0.077    0.087    0.887    0.375
+    gender_dm2        0.327    0.085    3.846    0.000
+  t4search ~                                          
+    t3cplan    (b)    0.557    0.061    9.196    0.000
+  t4netw ~                                            
+    t3cplan    (b)    0.557    0.061    9.196    0.000
+  t4infsk ~                                           
+    t3cplan    (b)    0.557    0.061    9.196    0.000
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(>|z|)
+ .t4search ~~                                         
+   .t4netw            0.269    0.085    3.156    0.002
+   .t4infsk           0.679    0.108    6.312    0.000
+ .t4netw ~~                                           
+   .t4infsk           0.347    0.057    6.125    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)
+   .t4search          2.710    0.164   16.526    0.000
+   .t4netw            0.719    0.057   12.663    0.000
+   .t4infsk           1.240    0.079   15.762    0.000
+   .t3cplan           0.569    0.043   13.242    0.000
+
+Defined Parameters:
+                   Estimate  Std.Err  z-value  P(>|z|)
+    direct            0.026    0.029    0.909    0.363
+    indirect         -0.044    0.020   -2.229    0.026
+    total            -0.018    0.036   -0.502    0.616
